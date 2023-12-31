@@ -1,0 +1,6 @@
+* [x] Nth prime (medium)
+* [x] Satellite (hard)
+* [ ] Napsack (hard)
+* [ ] Two Bucket (hard)
+* [ ] Forth (hard)
+* [ ] Zebra Puzzle (hard)
