@@ -19,7 +19,7 @@ END_INPUT
 }
 
 @test 'parsing and numbers:pushes negative numbers onto the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -35,7 +35,7 @@ END_INPUT
 }
 
 @test 'addition:can add two numbers' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -51,7 +51,7 @@ END_INPUT
 }
 
 @test 'addition:errors if there is nothing on the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -67,7 +67,7 @@ END_INPUT
 }
 
 @test 'addition:errors if there is only one value on the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -83,7 +83,7 @@ END_INPUT
 }
 
 @test 'subtraction:can subtract two numbers' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -99,7 +99,7 @@ END_INPUT
 }
 
 @test 'subtraction:errors if there is nothing on the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -115,7 +115,7 @@ END_INPUT
 }
 
 @test 'subtraction:errors if there is only one value on the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -131,7 +131,7 @@ END_INPUT
 }
 
 @test 'multiplication:can multiply two numbers' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -147,7 +147,7 @@ END_INPUT
 }
 
 @test 'multiplication:errors if there is nothing on the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -163,7 +163,7 @@ END_INPUT
 }
 
 @test 'multiplication:errors if there is only one value on the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -179,7 +179,7 @@ END_INPUT
 }
 
 @test 'division:can divide two numbers' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -195,7 +195,7 @@ END_INPUT
 }
 
 @test 'division:performs integer division' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -211,7 +211,7 @@ END_INPUT
 }
 
 @test 'division:errors if dividing by zero' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -227,7 +227,7 @@ END_INPUT
 }
 
 @test 'division:errors if there is nothing on the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -243,7 +243,7 @@ END_INPUT
 }
 
 @test 'division:errors if there is only one value on the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -259,7 +259,7 @@ END_INPUT
 }
 
 @test 'combined arithmetic:addition and subtraction' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -275,7 +275,7 @@ END_INPUT
 }
 
 @test 'combined arithmetic:multiplication and division' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -291,7 +291,7 @@ END_INPUT
 }
 
 @test 'dup:copies a value on the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -307,7 +307,7 @@ END_INPUT
 }
 
 @test 'dup:copies the top value on the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -323,7 +323,7 @@ END_INPUT
 }
 
 @test 'dup:errors if there is nothing on the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -339,7 +339,7 @@ END_INPUT
 }
 
 @test 'drop:removes the top value on the stack if it is the only one' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -355,7 +355,7 @@ END_INPUT
 }
 
 @test 'drop:removes the top value on the stack if it is not the only one' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -371,7 +371,7 @@ END_INPUT
 }
 
 @test 'drop:errors if there is nothing on the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -387,7 +387,7 @@ END_INPUT
 }
 
 @test 'swap:swaps the top two values on the stack if they are the only ones' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -403,7 +403,7 @@ END_INPUT
 }
 
 @test 'swap:swaps the top two values on the stack if they are not the only ones' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -419,7 +419,7 @@ END_INPUT
 }
 
 @test 'swap:errors if there is nothing on the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -435,7 +435,7 @@ END_INPUT
 }
 
 @test 'swap:errors if there is only one value on the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -451,7 +451,7 @@ END_INPUT
 }
 
 @test 'over:copies the second element if there are only two' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -467,7 +467,7 @@ END_INPUT
 }
 
 @test 'over:copies the second element if there are more than two' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -483,7 +483,7 @@ END_INPUT
 }
 
 @test 'over:errors if there is nothing on the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -499,7 +499,7 @@ END_INPUT
 }
 
 @test 'over:errors if there is only one value on the stack' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -515,7 +515,7 @@ END_INPUT
 }
 
 @test 'user-defined words:can consist of built-in words' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -532,7 +532,7 @@ END_INPUT
 }
 
 @test 'user-defined words:execute in the right order' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -549,7 +549,7 @@ END_INPUT
 }
 
 @test 'user-defined words:can override other user-defined words' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -567,7 +567,7 @@ END_INPUT
 }
 
 @test 'user-defined words:can override built-in words' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -584,7 +584,7 @@ END_INPUT
 }
 
 @test 'user-defined words:can override built-in operators' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -601,7 +601,7 @@ END_INPUT
 }
 
 @test 'user-defined words:can use different words with the same name' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -620,7 +620,7 @@ END_INPUT
 }
 
 @test 'user-defined words:can define word that uses word with the same name' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -638,7 +638,7 @@ END_INPUT
 }
 
 @test 'user-defined words:cannot redefine non-negative numbers' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -654,7 +654,7 @@ END_INPUT
 }
 
 @test 'user-defined words:cannot redefine negative numbers' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -670,7 +670,7 @@ END_INPUT
 }
 
 @test 'user-defined words:errors if executing a non-existent word' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -686,7 +686,7 @@ END_INPUT
 }
 
 @test 'case-insensitivity:DUP is case-insensitive' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -702,7 +702,7 @@ END_INPUT
 }
 
 @test 'case-insensitivity:DROP is case-insensitive' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -718,7 +718,7 @@ END_INPUT
 }
 
 @test 'case-insensitivity:SWAP is case-insensitive' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -734,7 +734,7 @@ END_INPUT
 }
 
 @test 'case-insensitivity:OVER is case-insensitive' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -750,7 +750,7 @@ END_INPUT
 }
 
 @test 'case-insensitivity:user-defined words are case-insensitive' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
@@ -767,7 +767,7 @@ END_INPUT
 }
 
 @test 'case-insensitivity:definitions are case-insensitive' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -c -f forth.jq << 'END_INPUT'
         {
