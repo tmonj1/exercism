@@ -18,7 +18,7 @@ END_INPUT
 }
 
 @test 'resident who owns zebra' {
-    [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+    #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
 
     run jq -r -f zebra-puzzle.jq << 'END_INPUT'
         {
